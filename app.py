@@ -47,6 +47,17 @@ with st.sidebar:
 
     for source in unique_sources:
         st.write(f"• {source}")
+    st.divider()
+
+    st.markdown("### Try asking")
+
+    st.markdown("""
+- What is the latest working UAT start date?
+- What is preventing UAT from starting?
+- What changed in Phase 2?
+- What are the current project risks?
+- What is the total project budget?
+""")
 
 if "last_question" not in st.session_state:
     st.session_state.last_question = None
