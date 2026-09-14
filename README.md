@@ -119,4 +119,21 @@ For a Delivery or Program Manager, it can help:
 
 The solution is designed as a practical enterprise AI use case rather than a generic chatbot.
 
+## MVP Scope and Future Evolution
+
+This implementation is intentionally designed as a focused portfolio MVP. The current version uses a small synthetic project dataset and a lightweight local JSON-based embedding index.
+
+A production enterprise implementation could evolve to include:
+
+- **Google Drive / SharePoint integration** for automated ingestion of live project artefacts.
+- **Incremental indexing** when documents are added or updated.
+- **Enterprise vector storage** using a managed vector database.
+- **Role-based access control** so users retrieve only information they are authorized to see.
+- **Document-level security and audit logging** for enterprise governance.
+- **Automated evaluation** of retrieval quality, groundedness and answer accuracy.
+- **Portfolio-level knowledge** across multiple projects rather than a single programme.
+- **Structured delivery insights** such as automated risk summaries, overdue actions, milestone changes and executive briefings.
+
+The current MVP demonstrates the core architecture and user experience while keeping the implementation transparent and easy to evaluate.
+
 All project documents included in this repository are synthetic. No real client or confidential information is used.
