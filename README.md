@@ -104,4 +104,19 @@ A Delivery Manager can ask questions such as:
 - **Conversational context:** Follow-up questions such as “What is preventing it from starting?” are rewritten into standalone questions before retrieval.
 - **Privacy-safe portfolio design:** The demonstration uses completely synthetic project data rather than real client information.
 
+## Business Value
+
+The Delivery Knowledge Assistant demonstrates how Generative AI can reduce the effort required to understand and govern complex delivery programmes.
+
+For a Delivery or Program Manager, it can help:
+
+- Surface current risks, dependencies and blockers from distributed project artefacts.
+- Trace how milestones, commitments and decisions changed over time.
+- Reduce manual searching across status reports, meeting minutes and trackers.
+- Improve leadership visibility by providing evidence-backed answers.
+- Accelerate onboarding of new project or programme stakeholders.
+- Support better governance while keeping the human decision-maker in control.
+
+The solution is designed as a practical enterprise AI use case rather than a generic chatbot.
+
 All project documents included in this repository are synthetic. No real client or confidential information is used.
