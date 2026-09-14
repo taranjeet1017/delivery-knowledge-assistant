@@ -95,4 +95,13 @@ A Delivery Manager can ask questions such as:
 
 ## Data Privacy
 
+## Key Design Decisions
+
+- **Grounded answers rather than generic AI responses:** The assistant answers only from indexed project artefacts.
+- **Chronology-aware retrieval:** When project dates, risks, dependencies or decisions evolve, newer evidence is prioritized while older information can still explain the history.
+- **Transparent evidence:** Every answer can expose the supporting document excerpts used by the assistant.
+- **Hallucination control:** If the source material does not contain an answer, the assistant states that rather than inventing information.
+- **Conversational context:** Follow-up questions such as “What is preventing it from starting?” are rewritten into standalone questions before retrieval.
+- **Privacy-safe portfolio design:** The demonstration uses completely synthetic project data rather than real client information.
+
 All project documents included in this repository are synthetic. No real client or confidential information is used.
