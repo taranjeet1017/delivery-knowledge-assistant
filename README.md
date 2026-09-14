@@ -51,6 +51,7 @@ flowchart LR
     I --> J[OpenAI Response Generation]
     J --> K[Grounded Answer]
     K --> L[Supporting Source Evidence]
+```
 
 ## Data Privacy
 
