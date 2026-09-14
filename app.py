@@ -62,6 +62,16 @@ with st.sidebar:
 - What are the current project risks?
 - What is the total project budget?
 """)
+    st.divider()
+
+    with st.expander("How this assistant works"):
+        st.markdown("""
+1. Project documents are converted into searchable text chunks.
+2. OpenAI embeddings identify the most relevant project evidence.
+3. Retrieval considers both semantic relevance and document chronology.
+4. The AI answers only from the retrieved project context.
+5. Supporting evidence can be inspected below each answer.
+""")
 
 if "last_question" not in st.session_state:
     st.session_state.last_question = None
