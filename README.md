@@ -119,6 +119,22 @@ For a Delivery or Program Manager, it can help:
 
 The solution is designed as a practical enterprise AI use case rather than a generic chatbot.
 
+## Evaluation
+
+A small evaluation suite is included to validate the RAG pipeline against representative Delivery Manager questions.
+
+The current test set checks:
+
+- Retrieval of the latest UAT date
+- Explanation of milestone changes
+- Identification of Phase 2 scope changes
+- Identification of estimation dependencies
+- Refusal to invent unsupported project budget information
+
+**Current result: 5/5 evaluation cases passed.**
+
+The evaluation uses expected facts rather than exact response wording so that correct answers are not penalized for harmless phrasing differences.
+
 ## MVP Scope and Future Evolution
 
 This implementation is intentionally designed as a focused portfolio MVP. The current version uses a small synthetic project dataset and a lightweight local JSON-based embedding index.
