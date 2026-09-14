@@ -4,6 +4,13 @@
 
 An AI-powered project delivery assistant that answers questions from project documents using Retrieval-Augmented Generation (RAG).
 
+## Demo
+
+![Delivery Knowledge Assistant Demo](assets/delivery-knowledge-assistant-demo.png)
+
+An AI-powered project delivery assistant that answers questions from project documents using Retrieval-Augmented Generation (RAG).
+
+
 ## What it demonstrates
 
 - Enterprise document ingestion
