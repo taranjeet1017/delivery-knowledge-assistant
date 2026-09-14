@@ -67,6 +67,48 @@ flowchart LR
     K --> L[Supporting Source Evidence]
 ```
 
+## Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/taranjeet1017/delivery-knowledge-assistant.git
+cd delivery-knowledge-assistant
+```
+
+Create and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file in the project root and add your OpenAI API key:
+
+```text
+OPENAI_API_KEY=your_openai_api_key
+```
+
+Build the searchable document index:
+
+```bash
+python build_index.py
+```
+
+Start the application:
+
+```bash
+streamlit run app.py
+```
+
+> The `.env` file is excluded from Git and should never be committed to the repository.
+
 ## Data Privacy
 
 All project documents included in this repository are synthetic. No real client or confidential informat
