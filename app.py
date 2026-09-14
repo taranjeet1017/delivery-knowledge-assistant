@@ -17,6 +17,10 @@ st.set_page_config(
 
 st.title("Delivery Knowledge Assistant")
 st.caption("Grounded AI assistant for the NexusCert modernization project")
+st.info(
+    "Portfolio demonstration using fully synthetic project data. "
+    "No real client or confidential information is included."
+)
 if st.button("Clear conversation"):
     st.session_state.messages = []
     st.session_state.last_question = None
