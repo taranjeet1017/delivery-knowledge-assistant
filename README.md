@@ -36,6 +36,22 @@ A Delivery Manager can ask questions such as:
 - python-docx
 - openpyxl
 
+## Solution Architecture
+
+```mermaid
+flowchart LR
+    A[Project Documents] --> B[Document Extraction]
+    B --> C[Text Chunking]
+    C --> D[OpenAI Embeddings]
+    D --> E[Vector Index]
+    F[Delivery Manager Question] --> G[Semantic Retrieval]
+    E --> G
+    G --> H[Chronology-Aware Ranking]
+    H --> I[Relevant Project Context]
+    I --> J[OpenAI Response Generation]
+    J --> K[Grounded Answer]
+    K --> L[Supporting Source Evidence]
+
 ## Data Privacy
 
 All project documents included in this repository are synthetic. No real client or confidential informat
