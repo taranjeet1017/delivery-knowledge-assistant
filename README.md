@@ -11,15 +11,22 @@ An AI-powered project delivery assistant that answers questions from project doc
 An AI-powered project delivery assistant that answers questions from project documents using Retrieval-Augmented Generation (RAG).
 
 
-## What it demonstrates
+## What This Project Demonstrates
 
-- Enterprise document ingestion
-- Semantic search using embeddings
-- Grounded AI responses
-- Chronology-aware retrieval
-- Conversational follow-up questions
-- Source transparency and evidence inspection
-- Hallucination control for unsupported information
+This project was built from a **Technology Delivery and AI Transformation** perspective rather than as a pure software-engineering exercise.
+
+It demonstrates:
+
+- Identification of a practical enterprise GenAI use case from a delivery-management problem.
+- Translation of that use case into an end-to-end RAG solution architecture.
+- Enterprise document ingestion and semantic retrieval using embeddings.
+- Grounded AI responses with visible supporting evidence.
+- Chronology-aware handling of changing milestones, risks, dependencies and decisions.
+- Conversational follow-up handling for ambiguous questions.
+- Hallucination control when information is not supported by project sources.
+- Consideration of enterprise concerns such as privacy, access control, governance and auditability.
+- Definition of measurable evaluation criteria rather than relying only on subjective AI responses.
+- End-to-end ownership from problem definition through MVP, deployment, evaluation and product demonstration.
 
 ## Demo Use Case
 
