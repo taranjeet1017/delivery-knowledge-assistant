@@ -4,6 +4,12 @@
 
 An AI-powered project delivery assistant that answers questions from project documents using Retrieval-Augmented Generation (RAG).
 
+## Executive Summary
+
+Built and deployed an enterprise GenAI prototype that helps Delivery and Program Managers extract current risks, dependencies, milestone changes and decisions from distributed project artefacts.
+
+The solution uses Retrieval-Augmented Generation (RAG), chronology-aware retrieval, conversational context and source-level evidence to provide grounded answers rather than generic AI responses. The MVP was designed, evaluated and deployed using fully synthetic project data.
+
 ## Demo
 
 ![Delivery Knowledge Assistant Demo](assets/delivery-knowledge-assistant-demo.png)
