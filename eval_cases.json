@@ -1,0 +1,42 @@
+[
+  {
+    "id": "EVAL-01",
+    "question": "What is the latest working UAT start date?",
+    "expected_facts": [
+      "06-Jul-2026"
+    ]
+  },
+  {
+    "id": "EVAL-02",
+    "question": "Why did the UAT start date change?",
+    "expected_facts": [
+      "legacy production deployment",
+      "performance",
+      "instability"
+    ]
+  },
+  {
+    "id": "EVAL-03",
+    "question": "What changed in Phase 2?",
+    "expected_facts": [
+      "migration utility",
+      "learner entitlement",
+      "Unified Identity Service"
+    ]
+  },
+  {
+    "id": "EVAL-04",
+    "question": "What is preventing the Phase 2 estimate from being finalized?",
+    "expected_facts": [
+      "API",
+      "mapping",
+      "sample data"
+    ]
+  },
+  {
+    "id": "EVAL-05",
+    "question": "What is the total budget for the NexusCert project?",
+    "expected_facts": [],
+    "must_refuse_if_unsupported": true
+  }
+]
