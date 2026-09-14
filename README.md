@@ -1,5 +1,7 @@
 # Delivery Knowledge Assistant
 
+**Live Demo:** [Open the Delivery Knowledge Assistant](https://delivery-knowledge-assistant-nd8xpudpu9hugsvwrxnmdc.streamlit.app/)
+
 An AI-powered project delivery assistant that answers questions from project documents using Retrieval-Augmented Generation (RAG).
 
 ## What it demonstrates
