@@ -92,13 +92,15 @@ def retrieve(question, top_k=5):
     )
 
     selected = []
-    used_sources = set()
+    source_counts = {}
 
     for score, record in results:
 
-        if record["source"] not in used_sources:
+        source = record["source"]
+
+        if source_counts.get(source, 0) < 2:
             selected.append((score, record))
-            used_sources.add(record["source"])
+            source_counts[source] = source_counts.get(source, 0) + 1
 
         if len(selected) == top_k:
             break

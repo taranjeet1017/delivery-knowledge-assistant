@@ -36,7 +36,7 @@ It demonstrates:
 
 ## Demo Use Case
 
-The application uses a fully synthetic software-modernization project called **NexusCert Platform Modernization**.
+The application uses a fully synthetic software-modernization project called **Nexus Platform Modernization**.
 
 A Delivery Manager can ask questions such as:
 
@@ -135,7 +135,7 @@ An AI-powered project delivery assistant that answers questions from project doc
 
 ## Demo Use Case
 
-The application uses a fully synthetic software-modernization project called **NexusCert Platform Modernization**.
+The application uses a fully synthetic software-modernization project called **Nexus Platform Modernization**.
 
 A Delivery Manager can ask questions such as:
 

@@ -15,8 +15,50 @@ st.set_page_config(
     page_icon="📘"
 )
 
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #F7F9FC;
+    }
+
+    h1, h2, h3 {
+        color: #17324D;
+    }
+
+    [data-testid="stSidebar"] {
+        background-color: #EEF4F7;
+    }
+
+    .stButton > button {
+        background-color: #1F6F78;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+    }
+
+    .stButton > button:hover {
+        background-color: #185B63;
+        color: white;
+    }
+
+    [data-testid="stMetric"] {
+        background-color: white;
+        border: 1px solid #D8E2E8;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    [data-testid="stExpander"] {
+        background-color: white;
+        border: 1px solid #D8E2E8;
+        border-radius: 10px;
+    }
+</style>
+""", unsafe_allow_html=True)python run_eval.py
+
 st.title("Delivery Knowledge Assistant")
-st.caption("Grounded AI assistant for the NexusCert modernization project")
+st.caption("Grounded AI assistant for the Nexus modernization project")
 st.info(
     "Portfolio demonstration using fully synthetic project data. "
     "No real client or confidential information is included."
@@ -47,10 +89,6 @@ with st.sidebar:
         len(records)
     )
 
-    st.markdown("**Available sources**")
-
-    for source in unique_sources:
-        st.write(f"• {source}")
     st.divider()
 
     st.markdown("### Try asking")
@@ -62,6 +100,7 @@ with st.sidebar:
 - What are the current project risks?
 - What is the total project budget?
 """)
+
     st.divider()
 
     with st.expander("How this assistant works"):
@@ -72,6 +111,14 @@ with st.sidebar:
 4. The AI answers only from the retrieved project context.
 5. Supporting evidence can be inspected below each answer.
 """)
+
+    st.divider()
+
+    with st.expander(
+        f"View indexed sources ({len(unique_sources)})"
+    ):
+        for source in unique_sources:
+            st.write(f"• {source}")
 
 if "last_question" not in st.session_state:
     st.session_state.last_question = None
@@ -201,13 +248,15 @@ def retrieve(question, top_k=5):
     # Prefer evidence from different documents
     # instead of several similar chunks from one file.
     selected = []
-    used_sources = set()
+    source_counts = {}
 
     for score, record in results:
 
-        if record["source"] not in used_sources:
+        source = record["source"]
+
+        if source_counts.get(source, 0) < 2:
             selected.append((score, record))
-            used_sources.add(record["source"])
+            source_counts[source] = source_counts.get(source, 0) + 1
 
         if len(selected) == top_k:
             break
@@ -245,7 +294,7 @@ for message in st.session_state.messages:
                     st.divider()
                     
 question = st.chat_input(
-    "Ask a question about the NexusCert project..."
+    "Ask a question about the Nexus project..."
 )
 
 

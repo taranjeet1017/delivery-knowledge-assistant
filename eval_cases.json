@@ -35,7 +35,7 @@
   },
   {
     "id": "EVAL-05",
-    "question": "What is the total budget for the NexusCert project?",
+    "question": "What is the total budget for the Nexus project?",
     "expected_facts": [],
     "must_refuse_if_unsupported": true
   }

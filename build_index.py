@@ -1,3 +1,13 @@
+SOURCE_DATES = {
+    "01_Nexus_Project_Brief.docx": "2026-01-06",
+    "02_Nexus_Architecture_Governance_Record.docx": "2026-05-18",
+    "03_Nexus_Release_Readiness_Record.docx": "2026-06-24",
+    "04_Nexus_Delivery_Update_12-Jun-2026.docx": "2026-06-12",
+    "05_Nexus_Delivery_Update_26-Jun-2026.docx": "2026-06-26",
+    "06_Nexus_Programme_Governance_Register.xlsx": "2026-06-26",
+}
+
+
 import json
 from pathlib import Path
 
@@ -12,12 +22,12 @@ client = OpenAI()
 DATA_DIR = Path("data")
 
 SOURCE_DATES = {
-    "01_Project_Overview_NexusCert.docx": "2026-01-06",
+    "01_Nexus_Project_Brief.docx": "2026-01-06",
     "02_Meeting_Minutes_Architecture_18-May-2026.docx": "2026-05-18",
     "03_Meeting_Minutes_UAT_Phase2_24-Jun-2026.docx": "2026-06-24",
     "04_WSR_08-Jun-2026_to_12-Jun-2026.docx": "2026-06-12",
     "05_WSR_22-Jun-2026_to_26-Jun-2026.docx": "2026-06-26",
-    "06_Project_Control_Tracker_NexusCert.xlsx": "2026-06-26",
+    "06_Nexus_Programme_Governance_Register.xlsx": "2026-06-26",
 }
 
 
