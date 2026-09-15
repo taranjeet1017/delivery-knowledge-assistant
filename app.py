@@ -55,7 +55,7 @@ st.markdown("""
         border-radius: 10px;
     }
 </style>
-""", unsafe_allow_html=True)python run_eval.py
+""", unsafe_allow_html=True)
 
 st.title("Delivery Knowledge Assistant")
 st.caption("Grounded AI assistant for the Nexus modernization project")
